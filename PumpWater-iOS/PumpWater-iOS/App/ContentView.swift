@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct ContentView: View {
-    @State private var frequency: Double = 440.0 // 기본 주파수 (440Hz)
+    @State private var frequency: Double = 300.0 // 기본 주파수 (440Hz)
     @State private var isPlaying = false
     @State private var timeRemaining = 600
     @State private var maxTime = 600
@@ -80,6 +80,17 @@ struct ContentView: View {
             
             Spacer()
             
+            // 앱 버전 추가
+            if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                HStack {
+                    Spacer()
+                    Text("🌟 version: \(appVersion)v")
+                        .foregroundColor(.black)
+                        .padding()
+                        .padding(.bottom, 20)
+                        .padding(.trailing, 10)
+                }
+            }
         }
         .onDisappear {
             stopTone()
