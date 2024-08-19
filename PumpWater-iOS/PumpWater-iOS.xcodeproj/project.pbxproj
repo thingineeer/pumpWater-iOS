@@ -54,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				717228882C731CCE00726965 /* App */,
-				717228872C731CC700726965 /* Shared */,
 				7172287C2C7317B800726965 /* Assets.xcassets */,
 				7172287E2C7317B800726965 /* Preview Content */,
 			);
@@ -67,13 +66,6 @@
 				7172287F2C7317B800726965 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		717228872C731CC700726965 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		717228882C731CCE00726965 /* App */ = {
