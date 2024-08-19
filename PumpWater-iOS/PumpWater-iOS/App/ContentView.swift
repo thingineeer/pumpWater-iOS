@@ -9,7 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct ContentView: View {
-    @State private var frequency: Double = 300.0 // 기본 주파수 (440Hz)
+    @State private var frequency: Double = 0.0 // 기본 주파수 (440Hz)
     @State private var isPlaying = false
     @State private var timeRemaining = 600
     @State private var maxTime = 600
@@ -20,7 +20,7 @@ struct ContentView: View {
     private var format: AVAudioFormat
     
     init() {
-        let sampleRate = 44100.0
+        let sampleRate = 40100.0
         let channelCount = 1
         self.format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: AVAudioChannelCount(channelCount))!
     }
@@ -84,10 +84,10 @@ struct ContentView: View {
             if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
                 HStack {
                     Spacer()
-                    Text("🌟 version: \(appVersion)v")
+                    Text("🌟 version: \(appVersion) v")
                         .foregroundColor(.black)
                         .padding()
-                        .padding(.bottom, 20)
+                        .padding(.bottom, 70)
                         .padding(.trailing, 10)
                 }
             }
@@ -105,7 +105,7 @@ struct ContentView: View {
         let samplesPerCycle = sampleRate / frequency
         var currentSample = 0.0
         
-        let bufferCapacity = AVAudioFrameCount(format.sampleRate / 10) // 0.1초 분량의 샘플 버퍼
+        let bufferCapacity = AVAudioFrameCount(format.sampleRate / 10 + 1.1) // 샘플 버퍼
         let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: bufferCapacity)!
         buffer.frameLength = bufferCapacity
         
