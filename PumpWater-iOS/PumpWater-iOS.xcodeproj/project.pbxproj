@@ -12,7 +12,6 @@
 		7172287D2C7317B800726965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7172287C2C7317B800726965 /* Assets.xcassets */; };
 		717228802C7317B800726965 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7172287F2C7317B800726965 /* Preview Assets.xcassets */; };
 		717228992C7321B300726965 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 717228982C7321B300726965 /* ComposableArchitecture */; };
-		7172289B2C732DB700726965 /* AudioFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7172289A2C732DB700726965 /* AudioFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		7172287A2C7317B700726965 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7172287C2C7317B800726965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7172287F2C7317B800726965 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7172289A2C732DB700726965 /* AudioFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 			children = (
 				717228882C731CCE00726965 /* App */,
 				717228872C731CC700726965 /* Shared */,
-				717228862C731CA800726965 /* Features */,
 				7172287C2C7317B800726965 /* Assets.xcassets */,
 				7172287E2C7317B800726965 /* Preview Content */,
 			);
@@ -70,14 +67,6 @@
 				7172287F2C7317B800726965 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		717228862C731CA800726965 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				7172289A2C732DB700726965 /* AudioFeature.swift */,
-			);
-			path = Features;
 			sourceTree = "<group>";
 		};
 		717228872C731CC700726965 /* Shared */ = {
@@ -172,7 +161,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7172289B2C732DB700726965 /* AudioFeature.swift in Sources */,
 				7172287B2C7317B700726965 /* ContentView.swift in Sources */,
 				717228792C7317B700726965 /* App.swift in Sources */,
 			);
