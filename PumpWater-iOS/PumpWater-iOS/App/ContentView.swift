@@ -103,14 +103,34 @@ struct ContentView: View {
                             )
                     }
                     .padding(.bottom, 70)
-                    .padding(.trailing, 65)
+                    .padding(.trailing, 10)
+                    
+                    Button(action: {
+                        // 개발자 피드백 메시지
+                        print("개인정보 방침")
+                        // URL을 사파리로 열기
+                        if let url = URL(string: Config.privateInfoRules) {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        Text("개인 정보 방침")
+                            .lineLimit(1)
+                            .foregroundColor(.blue)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.blue, lineWidth: 2)
+                            )
+                    }
+                    .padding(.bottom, 70)
+                    .padding(.trailing, 10)
                     
                     
-                    Text("🌟 version: \(appVersion) v")
+                    Text("🌟\(appVersion) v")
                         .foregroundColor(.black)
                         .padding()
                         .padding(.bottom, 70)
-                        .padding(.trailing, 10)
+                        .padding(.trailing, 5)
                 }
             }
         }
