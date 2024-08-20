@@ -12,6 +12,7 @@
 		7172287D2C7317B800726965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7172287C2C7317B800726965 /* Assets.xcassets */; };
 		717228802C7317B800726965 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7172287F2C7317B800726965 /* Preview Assets.xcassets */; };
 		717228992C7321B300726965 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 717228982C7321B300726965 /* ComposableArchitecture */; };
+		71B5EEA52C745A2400ADBC65 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5EEA42C745A2400ADBC65 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		7172287C2C7317B800726965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7172287F2C7317B800726965 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71B5EEA32C7349A700ADBC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71B5EEA42C745A2400ADBC65 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				717228882C731CCE00726965 /* App */,
 				7172287C2C7317B800726965 /* Assets.xcassets */,
 				7172287E2C7317B800726965 /* Preview Content */,
+				71B5EEA42C745A2400ADBC65 /* Config.swift */,
 			);
 			path = "PumpWater-iOS";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				7172287B2C7317B700726965 /* ContentView.swift in Sources */,
 				717228792C7317B700726965 /* App.swift in Sources */,
+				71B5EEA52C745A2400ADBC65 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

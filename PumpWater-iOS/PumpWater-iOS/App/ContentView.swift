@@ -84,6 +84,28 @@ struct ContentView: View {
             if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
                 HStack {
                     Spacer()
+                    
+                    Button(action: {
+                        // 개발자 피드백 메시지
+                        print("Feedback")
+                        // URL을 사파리로 열기
+                        if let url = URL(string: Config.feedbackString) {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        Text("개발자 문의")
+                            .lineLimit(1)
+                            .foregroundColor(.blue)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.blue, lineWidth: 2)
+                            )
+                    }
+                    .padding(.bottom, 70)
+                    .padding(.trailing, 65)
+                    
+                    
                     Text("🌟 version: \(appVersion) v")
                         .foregroundColor(.black)
                         .padding()
