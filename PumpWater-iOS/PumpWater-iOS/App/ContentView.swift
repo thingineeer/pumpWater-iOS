@@ -31,6 +31,7 @@ struct ContentView: View {
             
             Text("💦 Time Remaining:\n \(timeRemaining) seconds")
                 .font(.largeTitle)
+                .foregroundColor(.black)
                 .padding()
                 .lineLimit(2)
             
