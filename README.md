@@ -1,7 +1,27 @@
 <img src="https://github.com/user-attachments/assets/e5396fb1-8a91-498b-bc91-08500a7f8cd3" width=120 />
 
-# 💦 pumpWater:
-아이폰 물 빼기 앱
+# 💦 pumpWater: iPhone water draining app
+
+[App Store](https://url.kr/51iw4o)
+
+- ⚡️ This is an app that drains water from your iPhone using frequency.
+
+## Technology Stack
+
+- SwiftUI
+- AVFoundation
+
+## v1.0.0
+
+1 person development
+
+It only has the function of producing sound.
+
+If additional features are needed, we will **improve** them by refactoring them.
+
+---
+
+# 💦 pumpWater: 아이폰 물 빼기 앱
 
 [앱스토어](https://url.kr/51iw4o)
 
@@ -14,8 +34,13 @@
 
 ## v1.0.0
 
+1인 개발
+
 단지 소리가 나오는 기능 밖에 없습니다.
 추가적인 기능이 필요하면 refactoring 하여 기능을 개선 할 예정 입니다.
+
+
+---
 
 ## **⭐️ Commit Message Rule**
 
@@ -39,7 +64,7 @@
 [Test]: 테스트 코드
 ```
 
-> ex) [Feat] #5 - 서버 연결 구현
+> ex) [Feat] #5 - implement server connection
 
  <br>
 
